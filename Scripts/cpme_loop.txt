@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in /cygdrive/y/DR\ 10250/*720001145*
+do
+	cp * ~/Documents/Data/720001145_QCplates/
+done

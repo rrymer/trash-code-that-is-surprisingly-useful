@@ -1,0 +1,44 @@
+1)False, True, False, False, False
+2) 0.1 + 0.1 = 0.2, 1.1 1.1 2.3, 3.4 1
+3) tam, htam
+4) 
+good = []
+for word in wordList:
+		chars = word.splt('')
+		seen = []
+			for c in char:
+				if c in seen:
+					seen = []
+					break
+				if c in lStr:
+					seen.append(c)
+				else:
+					seen = []
+					break
+		if seen:
+			good.append(word)
+			
+5)
+	if len(v1) > len(v2):
+        result = v1
+        other = v2
+    else:
+		result = v2
+        other = v1
+    new_list = []
+    if other:
+		for i in range(len(other)):
+			new_list.append(result[i] + other[i])
+		return new_list
+	else:
+		return result
+
+6) It should print: 4, 5, 0, but def addUp will throw an IterationError, because dictionaryies 
+are not inherently iterable, other methods, like .keys() or .iteritems() need to be used
+
+No, for two reasons, one is not using d.keys(), and two is that result is not defined at the
+print statement at the end, because it local to addUp, and was not assigned to in __main__
+		
+7.1) None, 'n = 0', 'n = 10' 
+7.2) O(nlogn)
+8) Big O = upper bound Newton's method = approximation recursion = exponential
