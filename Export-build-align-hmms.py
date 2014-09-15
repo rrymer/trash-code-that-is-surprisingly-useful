@@ -44,7 +44,7 @@ def load_overall (table_name):
       connection.commit()
 
 def cleanup (table_name):
-    os.Popen("echo Roble8002~ | sudo -S rm /tmp/" + table_name + ".fasta",shell=True)
+    os.Popen("echo | sudo -S rm /tmp/" + table_name + ".fasta",shell=True)
     
 cursor.execute("SHOW TABLES")
 for (table_name,) in cursor:
