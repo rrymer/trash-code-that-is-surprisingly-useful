@@ -2,7 +2,7 @@
 """
 Created on Thu Sep 11 15:12:50 2014
 
-@author: pczrr
+@author:
 """
 
 from twisted.python.filepath import FilePath
