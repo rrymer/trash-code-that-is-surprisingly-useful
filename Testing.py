@@ -40,7 +40,7 @@ import decimal
 
 #table_name='Actinobacteria_sequences'
 #
-#os.Popen("echo Roble8002~ | sudo -S rm /tmp/" + table_name + ".fasta",shell=True)
+#os.Popen("echo | sudo -S rm /tmp/" + table_name + ".fasta",shell=True)
 def connect_to_mysqdb(host, db, un):
     connection = mdb.connect(host=host,db=db,user=un)
     return connection
