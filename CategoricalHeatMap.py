@@ -2,7 +2,7 @@
 """
 Created on Tue Apr  1 10:58:45 2014
 
-@author: pczrr
+@author: 
 """
 
 import matplotlib
