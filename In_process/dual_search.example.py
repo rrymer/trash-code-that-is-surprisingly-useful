@@ -2,7 +2,7 @@
 """
 Created on Sat Jun  7 08:53:38 2014
 
-@author: pczrr
+@author:
 
 Program that answers this puzzler:
 
