@@ -2,7 +2,7 @@
 """
 Created on Sat May 31 13:10:31 2014
 
-@author: pczrr
+@author: 
 """
 
 import glob
