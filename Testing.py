@@ -2,7 +2,7 @@
 """
 Created on Thu Apr 10 11:29:05 2014
 
-@author: pczrr
+@author: 
 """
 #import numpy as np
 #import itertools as it
