@@ -2,7 +2,7 @@
 """
 Created on Fri Apr  4 16:14:45 2014
 
-@author: pczrr
+@author:
 """
 
 import MySQLdb as mdb
