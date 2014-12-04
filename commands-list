@@ -1,0 +1,21 @@
+#random commands I need to remember
+#System
+	ssh-keygen
+	->copy id_rsa.pub to clipboard, and then paste into wherever, such as:
+		>authorized_keys
+		>git account
+	#change shell
+	chsh -s /bin/zsh
+
+#Hive
+	create table <blah> as select <blah> from <existing table>
+	drop table <blah>
+	alter table <blah> <commands>
+
+#git
+	git clone <link, preferable ssh after adding a key as above>
+	git add <files> #stages files for committing
+	git checkout <branch>
+	git status
+	git branch <commands, or name>
+
