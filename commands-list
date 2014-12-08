@@ -19,3 +19,5 @@
 	git status
 	git branch <commands, or name>
 
+#hadoop
+	hadoop job -list
