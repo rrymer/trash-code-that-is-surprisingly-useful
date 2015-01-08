@@ -15,6 +15,8 @@
 		click view as binary
 
 #git
+	git init #new repo
+	git remote add origin <link to repo>
 	git clone <link, preferable ssh after adding a key as above>
 	git add <files> #stages files for committing
 	git checkout <branch>
