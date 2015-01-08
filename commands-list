@@ -11,6 +11,8 @@
 	create table <blah> as select <blah> from <existing table>
 	drop table <blah>
 	alter table <blah> <commands>
+	Filebrowser -> /user/hive/warehouse/database name.db/table name
+		click view as binary
 
 #git
 	git clone <link, preferable ssh after adding a key as above>
@@ -21,3 +23,9 @@
 
 #hadoop
 	hadoop job -list
+
+#hdfs
+	#change permissions:
+		ssh to root on 701
+		su - hdfs
+		hdfs dfs -chmod <options> <path>
