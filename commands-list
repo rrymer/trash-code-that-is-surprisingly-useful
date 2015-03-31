@@ -31,3 +31,8 @@
 		ssh to root on 701
 		su - hdfs
 		hdfs dfs -chmod <options> <path>
+
+#oozie
+	#set oozie url
+		export OOZIE_URL
+		oozie jobs -oozie http://usmlrs701.arrow.com:11000/oozie
