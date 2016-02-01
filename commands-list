@@ -36,3 +36,9 @@
 	#set oozie url
 		export OOZIE_URL
 		oozie jobs -oozie http://usmlrs701.arrow.com:11000/oozie
+
+#Pandas
+	df.value_counts()
+	df.(blah).plot(x=,y=,type=) #after importing matplotlib
+	series.sort_index()
+	<num> // <num> := truncating division, e. g., 1982 // 10 = 198.

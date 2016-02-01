@@ -1,0 +1,42 @@
+<!--author='a73270'-->
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="test-oozie-date-fxn.xml">
+
+    <global>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+        <configuration>
+            <property>
+                <name>hive.metastore.uris</name>
+                <value>thrift://usmlrs701.arrow.com:9083</value>
+            </property>
+            <property>
+                <name>hive.zookeeper.quorum</name>
+                <value>usmlrs701.arrow.com,usmlrs714.arrow.com,usmlrs716.arrow.com,usmlrs705.arrow.com,usmlrs717.arrow.com</value>
+            </property>
+            <property>
+                <name>hive.server2.thrift.port</name>
+                <value>10000</value>
+            </property>
+        </configuration>
+    </global>
+    <start to="select_date"/>
+
+    <action name="select_date">
+        <hive2 xmlns="uri:oozie:hive2-action:0.1">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <jdbc-url>jdbc:hive2://usmlrs701.arrow.com:10000/default</jdbc-url>
+            <script>test.hql</script>
+            <param>TODAY=${timestamp()}</param>
+            <file>test.hql</file>
+        </hive2>
+        <ok to="End"/>
+        <error to="Kill"/>
+    </action>
+
+    <kill name="Kill">
+        <message>Action failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="End"/>
+</workflow-app>
